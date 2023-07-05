@@ -1,5 +1,5 @@
 Canada is burning. I ventured out to gather the data necessary for analysing the current wildfires. Canadian interagency forest fire centre(CIFFC) has done a brilliant job at showcasing the data on their website: https://ciffc.net/. I wondered if I could I scrape the data? and checked their robots.txt file for any restrictions. Thankfully they didnt restrict any part of their website for scraping/crawling.
-Then I opened their website and inspected their html and got the necessary APIs needed to get the neessary data. The data was in a semi structured form: JSON. I used Pandas to convert this nested Json data into a structured table format and stored it in the form of excel sheets. You can access these files in the Datasets folder.
+Then I opened their website and inspected their html and got the necessary APIs needed to get the data. It was in a semi structured form: JSON. I used Pandas to convert this nested Json data into a structured table format and stored it in the form of excel sheets. You can access these files in the Datasets folder.
 
 The aim of the project is to analyse the wildfires by Province, both historically and for the present year:2023 as CIFFC presents only the nation-wide view of wildfires.
 
@@ -22,3 +22,4 @@ I have merged the data from dim_agency and dim_province_forest into a single dim
 References:
 1. https://cwfis.cfs.nrcan.gc.ca/downloads/activefires/
 2. https://ciffc.net/
+3. https://www.worldatlas.com/articles/forest-land-by-canadian-province-and-territory.html
